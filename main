@@ -1,0 +1,32 @@
+// HomeWork-2
+// RALEM ikram
+
+  Public Class HomeWork {
+  Public Static Void main ( String [ ] args ) {
+  Personne P1 = new Personne ( ) ;
+  Personne P2 = new Personne ( ) ;
+  Personne P3 = new Personne ( ) ;
+
+  Personne P = new Personne ( ) ;
+  P.SetNom (' ikram ') ;
+  P.SetPrénom (' Ralem ' ) ;
+  P.SetNationalité (' DZ ') ;
+  P.Set.Âge (' 20 ') ;
+  System.out.println (" vous êtes : ") ;
+  System.out.println(p) ;
+  
+  P.CreeListeAmis ( ) ;
+  P.AjouteAmis (P1) ;
+  P.AjouteAmis (P2) ;
+  P.AjouteAmis (P3) ;
+
+  System.out.println (" \n== \n Vos amis sont " ) ;
+  P.MaListeAmis ( ) ;
+  
+  System.out.println (" \n== \n Vos amis Étrangers  sont " ) ;
+  P.AmisEtrangers ( ) ;
+  
+  System.out.println (" \n== \n Vos amis Algeriens sont " ) ;
+  P.AmisAlgeriens ( ) ;
+    }
+}
