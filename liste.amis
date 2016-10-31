@@ -1,0 +1,87 @@
+// HomeWork-2
+
+  class Personne {
+  Private String nom , prénom , nationalité ;
+  Private int âge ;
+  Private personne [ ] amis ;
+  Private int nbamis ;
+
+  Public Personne ( String nom , String prénom , String nationalité , int âge){
+  This.nom=nom ;
+  This.prénom=prénom ;
+  This.nationalité = nationalité ;
+  This.âge=âge;
+}
+
+  Personne () {}
+  Public Personne (Personne autre){
+  nom=autre.nom;
+  prénom=autre.prénom;
+  nationalité=autre.nationalité ;
+  âge=autre.âge;
+}
+  Public String getNom ( ) {
+      return nom; }
+
+  Public String getPrénom ( ) {
+      return prénom; }
+
+  Public String getNationalité ( ) {
+      return nationalité ; }
+
+  Public int getAge ( ) {
+      return âge ; }
+
+  Public Void SetNom (String nom ) {
+  This.nom=nom ; }
+
+  Public Void SetPrénom ( String prénom) {
+  This.prénom=prénom ; }
+  
+  
+    Public Void SetNationalité ( String nationalité) {
+    This.nationalité=nationalité ; }
+
+    Public Void SetAge ( int âge ) {
+    This.âge=âge ;  
+  }
+
+  Public String ToString ( ) {
+  return "nom" + This.getNom ( ) + "Prénom" + This.getPrénom ( ) + " nationalité " + This.getNationalité ( ) + "âge" + This. getAge ( ) ; }
+
+
+  
+  Public Voix CreeListeAmis ( ) {
+  amis= new Personne [3] ; }
+
+  Public Void AjouteAmis (Personne P) {
+  amis [ nbamis ] = new Personne (P);
+  nbamis ++ ; 
+}
+
+  Public Voix MaListeAmis ( ) {
+  for ( Personne i : amis )
+  System.out.println (i) ; }
+ 
+  Public Void AmisEtrangers ( ) {
+  for ( int i=0 ; i<amis.length ; i++ ) {
+  if (( nationalité.equals ( amis [ i ].nationalité))
+  System.out.println (Amis [i] ) ; 
+    }
+}
+  Public Void AmisAlgerien ( ) {
+  for ( int i=0 ; i<amis.length ; i++ ) {
+  if (( nationalité.equals ( amis [ i ].nationalité))
+  System.out.println (Amis [i] ) ;
+      }
+}
+
+
+  Public Void SetNationalité ( String nationalité) {
+  This.nationalité=nationalité ; }
+
+  Public Void SetAge ( int âge ) {
+  This.âge=âge ;  
+  }
+  
+
